@@ -81,7 +81,7 @@ cursor: pointer;
 
 #boton-iniciar {
     position: absolute;
-    top: 250%;
+    top: 80%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
@@ -93,8 +93,8 @@ cursor: pointer;
 
 <body>
 <div id="portada-inicio">
-    <img class="portada-img" src="img/sobre.jpeg" alt="Invitaci髇">
-    <img id="boton-iniciar" src="img/11688.png" alt="Iniciar invitaci髇">
+    <img class="portada-img" src="img/sobre.jpeg" alt="Invitaci贸n">
+    <img id="boton-iniciar" src="img/11688.png" alt="Iniciar invitaci贸n">
 </div>
 
 <img class="invitacion-img" src="img/invita.jpeg" alt="invitacion" />
@@ -146,7 +146,7 @@ cursor: pointer;
 
 <!-- PAGINA CONFIRMACION -->
 <div class="confirmacion-contenedor">
-    <img class="invitacion-img" src="img/asistencia.png" alt="Confirmaci髇 de asistencia">
+    <img class="invitacion-img" src="img/asistencia.png" alt="Confirmaci贸n de asistencia">
 
     <a href="https://wa.me/573146106418?text=Hola%2C%20confirmo%20mi%20asistencia." target="_blank">
         <img class="boton-confirmar" src="img/confirmar.png" alt="Confirmar asistencia">
@@ -205,7 +205,7 @@ const respondidas=new Set();
 
     let puntaje = 0;
     
-    // 1. Solo sumamos si la opci髇 seleccionada tiene la clase "correcta"
+    // 1. Solo sumamos si la opci贸n seleccionada tiene la clase "correcta"
     opciones.forEach(opcion => {
 	if(opcion.classList.contains("correcta")||
 	opcion.classList.contains("incorrecta")) {
@@ -218,7 +218,7 @@ const respondidas=new Set();
 	
 	if(respondidas.size<4) {return;}
     
-    // 2. El alert debe ir DENTRO del evento click para mostrarse al presionar el bot髇
+    // 2. El alert debe ir DENTRO del evento click para mostrarse al presionar el bot贸n
 const resultadoTrivia = document.getElementById("resultado-trivia");
 const imagenResultado = document.getElementById("imagen-resultado");
 
@@ -233,7 +233,7 @@ if (puntaje <= 1) {
 resultadoTrivia.style.display = "block";
 
 
-}); // 3. Se corrigieron las llaves y par閚tesis de cierre sobrantes
+}); // 3. Se corrigieron las llaves y par茅ntesis de cierre sobrantes
 document.getElementById('boton-iniciar').addEventListener('click', function () {
     const musica = document.getElementById('musica-fondo');
     musica.play();
